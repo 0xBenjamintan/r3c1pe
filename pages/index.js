@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold">
             <span className="text-blue-500"> R3C1PE</span>
           </h1>
-          <p className="text-3xl mt-8 text-justify">
+          <p className="text-3xl mt-8">
             Burning <span className="text-gradient">NFTs</span> for a Purpose,
             Fueling Charitable Acts Worldwide
           </p>
