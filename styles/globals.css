@@ -108,3 +108,8 @@
 .card-button:hover {
   background-color: #0056b3;
 }
+
+.borderr{
+  border-right: 1px solid #e8edf3;
+  height: 100%;
+}
