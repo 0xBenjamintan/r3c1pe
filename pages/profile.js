@@ -1,11 +1,12 @@
+import Profileleft from '@/components/Profileleft'
 import React from 'react'
 
 export default function profile() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24`}
+      className={``}
     >
-      hi this is the provide page
+      <Profileleft/>
     </main>
   )
 }

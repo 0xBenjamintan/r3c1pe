@@ -1,7 +1,7 @@
 import React from 'react';
 import Planscard from '@/components/Planscard';
 
-const PageWithCards = () => {
+const plans = () => {
   const cardsData = [
     {
       title: 'Card 1',
@@ -39,4 +39,4 @@ const PageWithCards = () => {
   );
 };
 
-export default PageWithCards;
+export default plans;
