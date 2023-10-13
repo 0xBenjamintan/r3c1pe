@@ -19,6 +19,19 @@ const Header = () => {
             <p className="text-2xl font-bold ml-2">ETHKL</p>
           </div>
         </Link>
+        <div className="flex">
+          <Link href="/">
+            <p className="text-2xl ml-2 hover">Home </p>
+          </Link>
+          <p className="text-2xl ml-2">|</p>
+          <Link href="/plans">
+          <p className="text-2xl ml-2 hover">Plan </p>
+          </Link>
+          <p className="text-2xl ml-2">|</p>
+          <Link href="/profile">
+          <p className="text-2xl ml-2 hover">Profile</p>
+          </Link>
+        </div>
         <div className="flex flex-wrap justify-end">
           <ConnectButton />
         </div>

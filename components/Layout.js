@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 
 const RootLayout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen mx-auto max-w-6xl px-4 pt-8 pb-16">
+    <div className="flex flex-col min-h-screen mx-auto max-w-6xl pb-16">
       <div className="flex-grow">
         <Header />
         <main className="my-0">{children}</main>
