@@ -160,35 +160,70 @@ export default function Home() {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       {/* fourth session */}
-      <div className="min-h-screen">
+      <div>
         <h1 className="text-5xl font-bold">
           <span className="text-blue-500"> FAQ</span>
         </h1>
         <br />
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
+            <AccordionTrigger>What is R3C1PE?</AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              R3C1PE, is a blockchain-based advertising and marketing platform
+              focused on transparency and user-centric engagement.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>Is it styled?</AccordionTrigger>
+            <AccordionTrigger>How does R3C1PE work?</AccordionTrigger>
             <AccordionContent>
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
+              R3C1PE leverages blockchain technology to ensure transparent,
+              cost-efficient, and user-centric advertising. Users can create and
+              manage ad campaigns, engage with a community, and participate in
+              the governance process.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>Is it animated?</AccordionTrigger>
+            <AccordionTrigger>
+              What sets R3C1PE apart from traditional advertising platforms?
+            </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              R3C1PE offers transparency through blockchain, cost-efficiency
+              with a one-time transaction model, and a user-centric approach,
+              making advertising more inclusive and fair.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              How can I get started with R3C1PE?
+            </AccordionTrigger>
+            <AccordionContent>
+              You can join R3C1PE by creating an account, exploring the
+              platform's features, and launching your advertising campaigns with
+              the help of user-friendly tools.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              Is R3C1PE open to all types of advertisers?
+            </AccordionTrigger>
+            <AccordionContent>
+              Yes, R3C1PE welcomes advertisers of all sizes and budgets,
+              offering equal opportunities for transparent and cost-effective
+              advertising.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
