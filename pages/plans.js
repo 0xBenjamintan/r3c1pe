@@ -38,7 +38,6 @@ const plans = () => {
             title={data.title}
             _description={data._description}
             _cpaOffer={data._cpaOffer}
-            content={data.content}
             _prices={data._prices}
           />
         ))}
