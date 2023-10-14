@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter, Plaster } from "next/font/google";
 import Planscard from "@/components/Planscard";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Head from "next/head";
 import {
   Accordion,
   AccordionContent,
@@ -27,6 +28,9 @@ export default function Home() {
 
   return (
     <main className={`flex flex-col justify-between p-24 ${inter.className}`}>
+      <Head>
+        <title>R3C1PE</title>
+      </Head>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/4 mt-4 md:mt-0 flex flex-col justify-center">
           {/* Right Column (Title) */}

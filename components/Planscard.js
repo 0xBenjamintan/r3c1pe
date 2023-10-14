@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useContractWrite } from "wagmi";
 import { ethGoerliAbi } from "../lib/abi.js";
 
@@ -7,6 +6,7 @@ const Planscard = ({
   title,
   _description,
   _ipfsHash,
+  _advertisementdapp,
   _prices,
   _cpaOffer,
   buttonText,
@@ -27,6 +27,7 @@ const Planscard = ({
       <p className="card-content text-justify h-40">{title}</p>
       {/* no need to show hash vlue */}
       {/* <p className="card-content">{_ipfsHash}</p> */}
+      <p className="card-content text-justify"><span className="font-bold">dApp supported:</span>{_advertisementdapp} </p>
       <p className="card-content">Price: {_prices} eth</p>
       <button className="card-button" onClick={() => write()}>
         Purchase
