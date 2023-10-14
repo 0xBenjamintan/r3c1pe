@@ -198,7 +198,7 @@ export default function Home() {
               making advertising more inclusive and fair.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-1">
+          <AccordionItem value="item-4">
             <AccordionTrigger>
               How can I get started with R3C1PE?
             </AccordionTrigger>
@@ -208,7 +208,7 @@ export default function Home() {
               with the help of user-friendly tools.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-1">
+          <AccordionItem value="item-5">
             <AccordionTrigger>
               Is R3C1PE open to all types of advertisers?
             </AccordionTrigger>

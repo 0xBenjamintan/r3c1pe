@@ -61,7 +61,7 @@ export default function Profileright() {
     <div className="w-9/12 mt-10 px-10">
       <IpfsUpload />
       {/* <div>Statistic</div> */}
-      <Card className="px-4 py-4 mb-6">
+      <Card className="px-4 pb-4 mb-6">
         <Table className="mt-6">
           <TableCaption className="font-bold">
             Marketing statistics

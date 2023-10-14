@@ -24,14 +24,14 @@ const Planscard = ({
   return (
     <div className="card">
       <h2 className="card-title">{_description}</h2>
-      <p className="card-content text-justify h-40">{title}</p>
+      <p className="card-content text-justify h-28">{title}</p>
       {/* no need to show hash vlue */}
       {/* <p className="card-content">{_ipfsHash}</p> */}
       <p className="card-content text-justify h-20">
         <span className="font-bold">dApp supported: </span>
         {_advertisementdapp}{" "}
       </p>
-      <p className="card-content">Price: {_prices} eth</p>
+      <p className="card-content"><span className="font-bold">Price: </span>{_prices} eth</p>
       <button className="card-button" onClick={() => write()}>
         Purchase
       </button>
