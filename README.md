@@ -10,7 +10,7 @@ In a digital world saturated with conventional advertising, R3C1PE emerges as a 
 
 ### Problem Statement 🗂️
 
-#### 1. Ad Fraud and Lack of Transparency 🗃️
+#### 1. Lack of Transparency 🗃️
 
 Advertisers often face issues with fraudulent traffic and impressions, leading to wasted advertising budgets. In web 2, this problem is exacerbated by a lack of transparency in the advertising supply chain, making it difficult to verify the legitimacy of ad views and clicks.
 

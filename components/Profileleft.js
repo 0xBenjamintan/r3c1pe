@@ -45,8 +45,8 @@ const Profileleft = () => {
 
   return (
     <>
-      <div className="flex w-full flex-col md:flex-row">
-        <div className="top-0 left-0 w-3/12 top-0 bottom-0 right-0">
+      <div className="flex flex-col md:flex-row">
+        <div className="w-3/12">
           <Card className="w-[350px] h-[500px] mt-10 ">
             <CardHeader className="my-6">
               {ensAvatar ? (
@@ -69,10 +69,10 @@ const Profileleft = () => {
               ) : (
                 <CardTitle>Wallet Address: {truncateLine(walletAdd)}</CardTitle>
               )}
-              <CardDescription>
-                {/* replace with ens or pub key */}
+              {/* replace with ens or pub key */}
+              {/* <CardDescription>
                 Deploy your new project in one-click.
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
             <CardContent>
               <form>
@@ -81,7 +81,7 @@ const Profileleft = () => {
                     <Label htmlFor="name">Package Type:</Label>
                   </div>
                   <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="framework">Description:</Label>
+                    <Label htmlFor="framework">Incentive Percentage:</Label>
                   </div>
                 </div>
               </form>
