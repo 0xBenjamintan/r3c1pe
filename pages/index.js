@@ -33,7 +33,9 @@ export default function Home() {
           <h1 className="text-5xl font-bold">
             <span className="text-blue-500"> R3C1PE</span>
           </h1>
-          <p className="text-3xl mt-8">Where Ads Soar Beyond Chains</p>
+          <p className="text-3xl mt-8 font-semibold">
+            Where Ads Soar Beyond Chains
+          </p>
         </div>
         <div className="md:w-3/4 h-[500px] flex justify-end	">
           {/* Left Column (Image) */}
@@ -54,7 +56,7 @@ export default function Home() {
         <div className="flex">
           <div className="w-4/12 card">
             <h1 className="text-2xl font-bold">
-              <span className="text-blue-500"> Transparent advertising </span>
+              <span className=""> Transparent advertising </span>
             </h1>
             <br />
             <p className="text-justify px-0.5">
@@ -66,7 +68,7 @@ export default function Home() {
           </div>
           <div className="w-4/12 card">
             <h1 className="text-2xl font-bold">
-              <span className="text-blue-500"> Decentralized Ecosystem </span>
+              <span className=""> Decentralized Ecosystem </span>
             </h1>
             <br />
             <p className="text-justify px-0.5">
@@ -77,7 +79,7 @@ export default function Home() {
           </div>
           <div className="w-4/12 card">
             <h1 className="text-2xl font-bold">
-              <span className="text-blue-500">
+              <span className="">
                 Equitable access for advertising opportunity
               </span>
             </h1>
@@ -103,7 +105,7 @@ export default function Home() {
         <div className="flex">
           <div className="w-4/12 card">
             <h1 className="text-2xl font-bold">
-              <span className="text-blue-500">
+              <span className="">
                 {" "}
                 Cost-Efficiency and Eliminating Intermediaries{" "}
               </span>
@@ -121,7 +123,7 @@ export default function Home() {
           </div>
           <div className="w-4/12 card">
             <h1 className="text-2xl font-bold">
-              <span className="text-blue-500">
+              <span className="">
                 {" "}
                 Equitable Opportunities and Fair Compensation{" "}
               </span>
@@ -139,7 +141,7 @@ export default function Home() {
           </div>
           <div className="w-4/12 card">
             <h1 className="text-2xl font-bold">
-              <span className="text-blue-500">Transparency brings Trust</span>
+              <span className="">Transparency brings Trust</span>
             </h1>
             <br />
             <p className="text-justify">
