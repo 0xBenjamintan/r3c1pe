@@ -5,25 +5,25 @@ import Planscard from "@/components/Planscard";
 const plans = () => {
   const cardsData = [
     {
-      title: "Silver Package",
+      title: "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
       _description:
-        "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
+        "Silver Package",
       _cpaOffer: "1",
-      _ipfsHash: "0x123456789abcdef",
+      _ipfsHash: "3123",
       _prices: "0.005",
     },
     {
-      title: "Gold Package",
+      title: "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
       _description:
-        "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
+        "Gold Package",
       _cpaOffer: "0.10",
       _ipfsHash: "2231",
       _prices: "0.01",
     },
     {
-      title: "Diamond Package",
+      title: "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
       _description:
-        "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
+        "Diamond Package",
       _cpaOffer: "0.20",
       _ipfsHash: "3231",
       _prices: "0.02",
