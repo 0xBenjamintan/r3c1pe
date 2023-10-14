@@ -1,6 +1,6 @@
 import React from "react";
 import { useContractWrite } from "wagmi";
-import { ethGoerliAbi } from "../lib/abi.js";
+import { ethGoerliAbi } from "../lib/abiAdsRegister.js";
 
 const Planscard = ({
   title,
