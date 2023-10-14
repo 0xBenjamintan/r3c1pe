@@ -1,7 +1,5 @@
 unverified: 0xd5006F52604c4E1EeaE8d628fCc861c36DBF8002
 
-new proper flattened goreli:
-
 AccountContract.sol : 0xF094c1BcE35B443013040AEd196cf5Db4dFe63f3
 
 AdIndex.sol: 0x89d65958C1d6bda92656255C6aD14dFD7872bf99
@@ -32,7 +30,6 @@ Auction.sol : 0x0D7f9EFaB9DD78D02bC2e9BEF040983Dcd0A753e
 Referral.sol : 0xc463642999E3dC595a84a06722c34B987cBc34c7
 
 UserInteraction.sol : 0x8BeaC20C911D5198F41b3028e2ca2C32Af874283
-
 
 
 
