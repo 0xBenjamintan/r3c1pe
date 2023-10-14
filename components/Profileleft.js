@@ -112,6 +112,7 @@ const Profileleft = () => {
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="framework">Incentive Percentage:</Label>
+                    {parseInt(Math.random() * 100)}%
                   </div>
                 </div>
               </form>

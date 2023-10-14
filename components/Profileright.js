@@ -17,8 +17,23 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import IpfsUpload from "./IpfsUpload";
+import { useContractWrite } from "wagmi";
+import { ethGoerliAbi } from "@/lib/abiAdsRegister";
+import { set } from "date-fns";
 
 export default function Profileright() {
+  const [claimHash, setClaimHash] = React.useState("");
+
+  const { write: claimOnClick } = useContractWrite({
+    address: "0xF8431b7B6Bd716e425b57181d15AEFeF695de184",
+    abi: ethGoerliAbi,
+    functionName: "withdrawFunds",
+    args: [10000000000000],
+    onSuccess: (e) => {
+      setClaimHash(e.hash);
+    },
+  });
+
   const statistics = [
     {
       item: "Click-Through Rate (CTR)",
@@ -73,12 +88,28 @@ export default function Profileright() {
           <p className="font-bold text-xl mt-4">Incentive Eligibility</p>
         </CardContent>
         <CardDescription>
-          {/* add variable value in {} from contract, this is the revenue value */}
-          Your revenue has reached above {}, click the button below to clain
-          your incentive.
+          Your revenue has reached above 0.00001 ETH, click the button below to
+          claim your incentive.
         </CardDescription>
+        {claimHash !== "" && (
+          <div
+            onClick={() => {
+              window.open(`https://goerli.etherscan.io/tx/${claimHash}`);
+            }}
+            className="text-blue-500 hover:text-blue-700 cursor-pointer mt-2"
+          >
+            {claimHash}
+          </div>
+        )}
         <CardFooter>
-          <Button className="mt-4">Claim Incentive</Button>
+          <Button
+            className="mt-4"
+            onClick={() => {
+              claimOnClick();
+            }}
+          >
+            Claim Incentive
+          </Button>
         </CardFooter>
       </Card>
     </div>
