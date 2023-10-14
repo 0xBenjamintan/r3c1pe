@@ -13,8 +13,10 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { useAccount } from "wagmi";
 
 const Header = () => {
+  const { address } = useAccount();
   return (
     <header className="flex flex-col gap-5 border-b border-gray-350">
       <div className="py-6 flex items-center justify-between">
@@ -43,11 +45,13 @@ const Header = () => {
             </p>
           </Link>
           {/* <p className="text-2xl ml-2">|</p> */}
-          <Link href="/profile" className="w-[30%]">
-            <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
-              Profile
-            </p>
-          </Link>
+          {address ? (
+            <Link href="/profile" className="w-[30%]">
+              <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+                Profile
+              </p>
+            </Link>
+          ) : null}
         </div>
         <div className="flex flex-wrap justify-end">
           <ConnectButton />

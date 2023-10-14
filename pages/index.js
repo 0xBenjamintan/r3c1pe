@@ -202,8 +202,8 @@ export default function Home() {
             </AccordionTrigger>
             <AccordionContent>
               You can join R3C1PE by creating an account, exploring the
-              platform's features, and launching your advertising campaigns with
-              the help of user-friendly tools.
+              platform&apos;s features, and launching your advertising campaigns
+              with the help of user-friendly tools.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-1">
