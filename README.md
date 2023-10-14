@@ -4,7 +4,7 @@
 
 ## Introduction to R3C1PE $$
 
-In a digital world saturated with conventional advertising, R3C1PE emerges as a beacon of innovation. We're transforming marketing by tapping into the boundless potential of blockchain technology. As a groundbreaking marketing agency, we're on a mission to bring transparency and effectiveness to advertising. Our platform unites businesses, dApp developers, and advertisers, facilitating secure, decentralized marketing campaigns powered by smart contracts and data analytics. In this comprehensive README, we'll dive deep into the core concept of R3C1PE, its mission, problem statement, innovative solutions, value propositions, roadmap, and how it intends to revolutionize and scale Ethereum to another level.
+In a digital world saturated with conventional advertising, R3C1PE emerges as a beacon of innovation. We're transforming marketing by tapping into the boundless potential of blockchain technology. As a groundbreaking marketing platform, we're on a mission to bring transparency and effectiveness to advertising. Our platform unites businesses, dApp developers, and advertisers, facilitating secure, decentralized marketing campaigns powered by smart contracts and data analytics. In this comprehensive README, we'll dive deep into the core concept of R3C1PE, its mission, problem statement, innovative solutions, value propositions, roadmap, and how it intends to revolutionize and scale Ethereum to another level.
 
 ## Project Description 🌟
 
