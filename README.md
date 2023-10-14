@@ -1,4 +1,4 @@
-# R3C1PE - Where Ads Soar Beyond Chains - [Try Me Out](link)
+# R3C1PE - Where Ads Soar Beyond Chains - [Try Me Out](https://r3c1pe.vercel.app/)
 
 ![](image)
 
@@ -24,7 +24,7 @@ The regulatory environment is continuously changing in both Web 2.0 and Web 3.0.
 
 ### Solution ⚙️
 
-#### 1. Transparent advertising 
+#### 1. Transparent advertising
 
 Leveraging blockchain technology to ensure complete transparency in the advertising process. All transactions, engagements, and ad placements are verifiable through the blockchain, eliminating hidden costs and promoting trust.
 
