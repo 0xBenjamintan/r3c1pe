@@ -5,30 +5,31 @@ import Planscard from "@/components/Planscard";
 const plans = () => {
   const cardsData = [
     {
-      title: "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
-      _description:
-        "Silver Package",
+      title:
+        "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
+      _description: "Silver Package",
       _cpaOffer: "0.005",
       _ipfsHash: "3123",
       _advertisementdapp: "sushiswap, kucoin",
       _prices: "0.005",
     },
     {
-      title: "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
-      _description:
-        "Gold Package",
-      _cpaOffer: "0.100",
+      title:
+        "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
+      _description: "Gold Package",
+      _cpaOffer: "0.01",
       _ipfsHash: "2231",
       _advertisementdapp: "sushiswap, kucoin, coinmarketcap, uniswap",
       _prices: "0.01",
     },
     {
-      title: "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
-      _description:
-        "Diamond Package",
-      _cpaOffer: "0.200",
+      title:
+        "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
+      _description: "Diamond Package",
+      _cpaOffer: "0.02",
       _ipfsHash: "3231",
-      _advertisementdapp: "sushiswap, kucoin, coinmarketcap, uniswap, coingecko, etherscan, uniswap, bybit",
+      _advertisementdapp:
+        "sushiswap, kucoin, coinmarketcap, uniswap, coingecko, etherscan, uniswap, bybit",
       _prices: "0.02",
     },
   ];

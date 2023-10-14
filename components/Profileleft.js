@@ -18,12 +18,12 @@ import { useRouter } from "next/router";
 import { ethGoerliAbi } from "@/lib/abiAdsRegister";
 
 const Profileleft = () => {
-  const [packageName, setPackageName] = React.useState(null);
+  const [packageName, setPackageName] = React.useState([]);
 
   const { address: userAddress } = useAccount();
 
   const { data, isSuccess } = useContractRead({
-    address: "0x708d090B015F702f3b9c961e202d9Fa9fE81F02C",
+    address: "0xF8431b7B6Bd716e425b57181d15AEFeF695de184",
     abi: ethGoerliAbi,
     functionName: "ads",
     args: [userAddress],
@@ -32,7 +32,7 @@ const Profileleft = () => {
   useEffect(() => {
     if (isSuccess) {
       console.log(data);
-      setPackageName(data[0]);
+      setPackageName(data);
       return;
     }
 
@@ -102,7 +102,13 @@ const Profileleft = () => {
                 <div className="grid w-full items-center gap-4">
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="name">Package Type:</Label>
-                    {packageName || "None"}
+                    {packageName[0] || "None"}
+                  </div>
+                  <div className="flex flex-col space-y-1.5">
+                    <Label htmlFor="name">Subscription Time:</Label>
+                    {new Date(
+                      parseInt(packageName[4]) * 1000
+                    ).toLocaleString() || "None"}
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="framework">Incentive Percentage:</Label>

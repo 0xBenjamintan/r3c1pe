@@ -12,10 +12,10 @@ const Planscard = ({
   buttonText,
 }) => {
   const { write } = useContractWrite({
-    address: "0x708d090B015F702f3b9c961e202d9Fa9fE81F02C",
+    address: "0xF8431b7B6Bd716e425b57181d15AEFeF695de184",
     abi: ethGoerliAbi,
     functionName: "registerAd",
-    args: [_description, parseInt(_cpaOffer), _ipfsHash],
+    args: [_description, parseFloat(_cpaOffer) * Math.pow(10, 18), _ipfsHash],
     onSuccess(data) {
       console.log("Success", data);
     },
