@@ -16,6 +16,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import IpfsUpload from "./IpfsUpload";
 
 export default function Profileright() {
   const statistics = [
@@ -43,15 +44,7 @@ export default function Profileright() {
 
   return (
     <div className="w-9/12 mt-10 px-10">
-      <Card className="px-4 py-4 mb-6">
-        <Input type="text" placeholder="Enter ur Desc" />
-        <br />
-        <input type="file" id="myFile" accept="image/*"></input>
-        <br />
-        <br />
-        <button className="card-button pt-10">Update</button>
-        <p>ipfs return hash(let them click)</p>
-      </Card>
+      <IpfsUpload />
       {/* <div>Statistic</div> */}
       <Card className="px-4 py-4 mb-6">
         <Table className="mt-6">
