@@ -30,17 +30,23 @@ const Header = () => {
             <p className="text-2xl font-bold ml-2">R3C1PE</p>
           </div>
         </Link>
-        <div className="flex">
-          <Link href="/">
-            <p className="text-2xl ml-2 hover">Home </p>
+        <div className="flex w-[30%] justify-between">
+          <Link href="/" className="w-[30%]">
+            <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+              Home
+            </p>
           </Link>
-          <p className="text-2xl ml-2">|</p>
-          <Link href="/plans">
-            <p className="text-2xl ml-2 hover">Plan </p>
+          {/* <p className="text-2xl ml-2">|</p> */}
+          <Link href="/plans" className="w-[30%]">
+            <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+              Plan
+            </p>
           </Link>
-          <p className="text-2xl ml-2">|</p>
-          <Link href="/profile">
-            <p className="text-2xl ml-2 hover">Profile</p>
+          {/* <p className="text-2xl ml-2">|</p> */}
+          <Link href="/profile" className="w-[30%]">
+            <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+              Profile
+            </p>
           </Link>
         </div>
         <div className="flex flex-wrap justify-end">
