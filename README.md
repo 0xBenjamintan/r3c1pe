@@ -1,6 +1,6 @@
 # R3C1PE - Where Ads Soar Beyond Chains - [Try Me Out](https://r3c1pe.vercel.app/)
 
-![](image)
+![](public/landing.png)
 
 ## Introduction to R3C1PE $$
 
