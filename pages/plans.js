@@ -4,19 +4,25 @@ import Planscard from "@/components/Planscard";
 const plans = () => {
   const cardsData = [
     {
-      title: "Card 1",
-      content: "This is the content for card 1.",
-      buttonText: "Button 1",
+      title:"Silver Package",
+      _description: "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
+      _cpaOffer: "0.05", 
+      _ipfsHash: "1231",
+      _prices: "0.005"
     },
     {
-      title: "Card 2",
-      content: "This is the content for card 2.",
-      buttonText: "Button 2",
+      title:"Gold Package",
+      _description: "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
+      _cpaOffer: "0.10", 
+      _ipfsHash: "2231",
+      _prices: "0.01"
     },
     {
-      title: "Card 3",
-      content: "This is the content for card 3.",
-      buttonText: "Button 3",
+      title:"Diamond Package",
+      _description: "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
+      _cpaOffer: "0.20", 
+      _ipfsHash: "3231",
+      _prices: "0.02"
     },
   ];
 
@@ -30,8 +36,10 @@ const plans = () => {
           <Planscard
             key={index}
             title={data.title}
+            _description={data._description}
+            _cpaOffer={data._cpaOffer}
             content={data.content}
-            buttonText={data.buttonText}
+            _prices={data._prices}
           />
         ))}
       </div>
