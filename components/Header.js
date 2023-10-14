@@ -1,19 +1,17 @@
 import Image from "next/image";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import Link from "next/link";
 import dynamic from "next/dynamic";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 import { useAccount } from "wagmi";
+import Link from "next/link";
 
 const Header = () => {
   const { address } = useAccount();
@@ -33,21 +31,37 @@ const Header = () => {
           </div>
         </Link>
         <div className="flex w-[30%] justify-between">
+          {/* <Menubar>
+            <MenubarMenu>
+              <MenubarTrigger as={Link} to="/">
+                Home
+              </MenubarTrigger>
+              <MenubarTrigger as={Link} to="/plans">
+                Plans
+              </MenubarTrigger>
+              {address ? (
+                <MenubarTrigger as={Link} to="/profile">
+                  Profile
+                </MenubarTrigger>
+              ) : null}
+            </MenubarMenu>
+          </Menubar> */}
+
           <Link href="/" className="w-[30%]">
-            <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+            <p className="text-xl hover w-full text-center rounded-[15px] py-1 border-gray-350 border-2 text-gray-350 transition-[2.5]">
               Home
             </p>
           </Link>
           {/* <p className="text-2xl ml-2">|</p> */}
           <Link href="/plans" className="w-[30%]">
-            <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+            <p className="text-xl hover w-full text-center rounded-[15px] py-1 border-gray-350 border-2 text-gray-350 transition-[2.5]">
               Plan
             </p>
           </Link>
           {/* <p className="text-2xl ml-2">|</p> */}
           {address ? (
             <Link href="/profile" className="w-[30%]">
-              <p className="text-2xl hover w-full text-center rounded-[15px] py-1 border-[#2563eb] border-2 text-[#2563eb] transition-[2.5]">
+              <p className="text-xl hover w-full text-center rounded-[15px] py-1 border-gray-350 border-2 text-gray-350 transition-[2.5]">
                 Profile
               </p>
             </Link>
