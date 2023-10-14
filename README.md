@@ -109,7 +109,7 @@ If you have valuable feedback, innovative ideas, or a desire to contribute to th
 
 - ETHKL Hackathon Main Track - To develop a system which can scale and bring new innovation towards Ethereum ecosystem.
 - Mantle Track, Best SocialFi or Consumer dApp - Hopes to provide Ethereum ecosystem with user-centric, financial empowerment, and social interaction.
-- Taiko Track, Best dAPP - R3C1PE aims to be one of the innovative and new ideas for bringing advertisement and marketing services onboard to web 3, which potentially become the best dapp among the scene.
+- Taiko Track, Best dApp, Fun Track - R3C1PE aims to be one of the innovative and new ideas for bringing advertisement and marketing services onboard to web 3, which potentially become the best dapp among the scene.
 
 ## Conclusion
 
