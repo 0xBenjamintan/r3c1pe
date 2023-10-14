@@ -1,28 +1,32 @@
 import React from "react";
+
 import Planscard from "@/components/Planscard";
 
 const plans = () => {
   const cardsData = [
     {
-      title:"Silver Package",
-      _description: "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
-      _cpaOffer: "0.05", 
-      _ipfsHash: "1231",
-      _prices: "0.005"
+      title: "Silver Package",
+      _description:
+        "Silver Package provides basic Advertising strategy that economically provide marketing value towards the consumers",
+      _cpaOffer: "1",
+      _ipfsHash: "0x123456789abcdef",
+      _prices: "0.005",
     },
     {
-      title:"Gold Package",
-      _description: "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
-      _cpaOffer: "0.10", 
+      title: "Gold Package",
+      _description:
+        "Gold Package provides intermediate Advertising strategy that economically provide marketing value towards the consumers",
+      _cpaOffer: "0.10",
       _ipfsHash: "2231",
-      _prices: "0.01"
+      _prices: "0.01",
     },
     {
-      title:"Diamond Package",
-      _description: "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
-      _cpaOffer: "0.20", 
+      title: "Diamond Package",
+      _description:
+        "Diamond Package provides advanced and complete Advertising strategy that potentially provide the largest value towards the consumers",
+      _cpaOffer: "0.20",
       _ipfsHash: "3231",
-      _prices: "0.02"
+      _prices: "0.02",
     },
   ];
 
@@ -39,6 +43,7 @@ const plans = () => {
             _description={data._description}
             _cpaOffer={data._cpaOffer}
             _prices={data._prices}
+            _ipfsHash={data._ipfsHash}
           />
         ))}
       </div>
