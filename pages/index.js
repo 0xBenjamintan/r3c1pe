@@ -8,10 +8,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useAccount } from "wagmi";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { address } = useAccount();
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if publicKey is present and redirect accordingly
+    if (address) {
+      router.push("/plans"); // Replace with the actual path to mainpage.js
+    }
+  }, [address, router]);
+
   return (
     <main className={`flex flex-col justify-between p-24 ${inter.className}`}>
       <div className="flex flex-col md:flex-row">
@@ -190,7 +203,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg mt-8 font-bold">
-              <ConnectButton />
+                <ConnectButton />
               </p>
             </div>
           </div>
