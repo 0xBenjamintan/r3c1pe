@@ -52,7 +52,7 @@ export default function Home() {
       <br />
       {/* second session */}
       <div>
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-4xl font-bold">
           <span className="text-blue-500"> What do we do?</span>
         </h1>
         <br />
@@ -101,7 +101,7 @@ export default function Home() {
       <br />
       {/* Third session */}
       <div>
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-4xl font-bold">
           <span className="text-blue-500"> Why R3C1PE?</span>
         </h1>
         <br />
@@ -165,13 +165,9 @@ export default function Home() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
       {/* fourth session */}
       <div>
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-4xl font-bold">
           <span className="text-blue-500"> FAQ</span>
         </h1>
         <br />
