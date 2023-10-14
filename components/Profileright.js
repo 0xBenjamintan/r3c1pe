@@ -80,6 +80,7 @@ export default function Profileright() {
           <p className="font-bold text-xl mt-4">Incentive Eligibility</p>
         </CardContent>
         <CardDescription>
+          {/* add variable value in {} from contract, this is the revenue value */}
           Your revenue has reached above {}, click the button below to clain
           your incentive.
         </CardDescription>
