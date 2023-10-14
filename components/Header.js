@@ -31,22 +31,6 @@ const Header = () => {
           </div>
         </Link>
         <div className="flex w-[30%] justify-between">
-          {/* <Menubar>
-            <MenubarMenu>
-              <MenubarTrigger as={Link} to="/">
-                Home
-              </MenubarTrigger>
-              <MenubarTrigger as={Link} to="/plans">
-                Plans
-              </MenubarTrigger>
-              {address ? (
-                <MenubarTrigger as={Link} to="/profile">
-                  Profile
-                </MenubarTrigger>
-              ) : null}
-            </MenubarMenu>
-          </Menubar> */}
-
           <Link href="/" className="w-[30%]">
             <p className="text-xl hover w-full text-center rounded-[15px] py-1 border-gray-350 border-2 text-gray-350 transition-[2.5]">
               Home
