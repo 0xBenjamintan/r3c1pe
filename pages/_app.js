@@ -3,19 +3,14 @@ import RootLayout from "@/components/Layout";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import {
-  mainnet,
-  goerli,
-  mantleTestnet,
-  taikoTestnetSepolia,
-} from "wagmi/chains";
+import { goerli, mantleTestnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 export default function App({ Component, pageProps }) {
   const { chains, publicClient } = configureChains(
-    [mainnet, goerli, mantleTestnet, taikoTestnetSepolia],
+    [goerli, mantleTestnet],
     [
       //eth goerli
       alchemyProvider({ apiKey: "8Q39a9O9ye6Ept__YtpkCrJs5yqRrrkj" }),
@@ -23,12 +18,6 @@ export default function App({ Component, pageProps }) {
         rpc: () => ({
           // Mantle Testnet API Key
           http: "https://rpc.ankr.com/mantle_testnet",
-        }),
-      }),
-      jsonRpcProvider({
-        rpc: () => ({
-          // Taiko Testnet API Key
-          http: "https://rpc.a2.taiko.xyz",
         }),
       }),
 
