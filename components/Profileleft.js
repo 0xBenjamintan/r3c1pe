@@ -11,20 +11,37 @@ import { Label } from "@/components/ui/label";
 import { useEnsAvatar } from "wagmi";
 import { useEnsName } from "wagmi";
 import { useAccount } from "wagmi";
+import { is } from "date-fns/locale";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Profileleft = () => {
-  const { address: walletAdd } = useAccount();
+  const { address: walletAdd, isDisconnected } = useAccount();
   const { data: ensName } = useEnsName();
   const { data: ensAvatar } = useEnsAvatar();
 
   function truncateLine(input) {
+    if (input === null || input === undefined) {
+      return ""; // or some placeholder like "Not connected"
+    }
+
     let line = typeof input === "number" ? input.toString() : input;
+
     if (line.length > 8) {
       return line.slice(0, 4) + "..." + line.slice(-4);
     } else {
       return line;
     }
   }
+
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if publicKey is present and redirect accordingly
+    if (isDisconnected) {
+      router.push("/"); // Replace with the actual path to mainpage.js
+    }
+  }, [isDisconnected, router]);
 
   return (
     <div className="top-0 left-0 w-3/12 borderr top-0 bottom-0 right-0">
