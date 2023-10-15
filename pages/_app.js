@@ -7,13 +7,15 @@ import { goerli, mantleTestnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { infuraProvider } from 'wagmi/providers/infura'
 
 export default function App({ Component, pageProps }) {
   const { chains, publicClient } = configureChains(
     [goerli, mantleTestnet],
     [
       //eth goerli
-      alchemyProvider({ apiKey: "8Q39a9O9ye6Ept__YtpkCrJs5yqRrrkj" }),
+      infuraProvider({ apiKey: 'eb9a664c802d4df8b7b3b43e787c648f' }),
+      //alchemyProvider({ apiKey: "8Q39a9O9ye6Ept__YtpkCrJs5yqRrrkj" }),
       jsonRpcProvider({
         rpc: () => ({
           // Mantle Testnet API Key
