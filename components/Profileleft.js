@@ -102,13 +102,15 @@ const Profileleft = () => {
                 <div className="grid w-full items-center gap-4">
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="name">Package Type:</Label>
-                    {packageName[0] || "None"}
+                    {packageName.length > 0 && (packageName[0] || "None")}
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="name">Subscription Time:</Label>
-                    {new Date(
-                      parseInt(packageName[4]) * 1000
-                    ).toLocaleString() || "None"}
+                    {packageName.length > 0 &&
+                      (new Date(
+                        parseInt(packageName[4]) * 1000
+                      ).toLocaleString() ||
+                        "None")}
                   </div>
                   <div className="flex flex-col space-y-1.5">
                     <Label htmlFor="framework">Incentive Percentage:</Label>
