@@ -35,8 +35,6 @@ const Profileleft = () => {
       setPackageName(data);
       return;
     }
-
-    setPackageName(null);
   }, [isSuccess]);
 
   const { address: walletAdd, isDisconnected } = useAccount();
